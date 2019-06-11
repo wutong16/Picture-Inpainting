@@ -6,12 +6,14 @@
 
 ## Paper based method
 
+#### Run
+
 To run the reimplemented project for the paper, place your original image and corresponding mask in the path `./pictures` like this:
 
 ```
 -pictures
-	-image.jpg/png/...
-	-image_mask.jpg/png/...
+	-image file
+	-image_mask file
 ```
 
 And then run:
@@ -32,14 +34,33 @@ And then run:
 `--tolerance`        : tolerance value for Lasso
 `--local`                : whether to build the dictionary locally
 
+#### Results
+
+The results will be save at `./results`,including the inpainted image and a report for a single experiment will be save at `./results/results.txt`. An example is like below:
+
+```txt
+>>> Experiment Time: 20190610-193633 
+>>> Experiment Settings: 
+patch_size: 101 | step: 25 | alpha: 0.001000 | tolerance: 0.000100 | max_iter: 10000 | local: 1 
+>>>Experimental Attribute: 
+total patch num: 470 | total missing pixel num: 11414 | average iteration: 100 | total time used: 293 s 
+>>>Experimental Metrics: 
+MSE: 0.002956 | PSNR: 25.293428 | SSIM: 0.957037 >>> Inpainted picture save at: 
+./results/hill_inpaint_20190610-193633.jpg 
+```
+
+
+
 ## Dictlearn based method
+
+#### Run
 
 To run the `dictlearn` based  method, place your original image and corresponding mask in the path `./pictures` the same as above:
 
 ```
 -pictures
-	-image.jpg/png/...
-	-image_mask.jpg/png/...
+	-image file
+	-image_mask file
 ```
 
 And then run:
@@ -48,4 +69,12 @@ And then run:
   python run_package.py
 ```
 
+#### Results
 
+The results will be save at `./results/package/`
+
+
+
+------
+
+Should you have any advice on the project or any problem using it, feel free to let me know. Issues are welcome!
