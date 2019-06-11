@@ -6,7 +6,7 @@
 
 ## Paper based method
 
-#### Run
+### Run
 
 To run the reimplemented project for the paper, place your original image and corresponding mask in the path `./pictures` like this:
 
@@ -22,7 +22,7 @@ And then run:
  python run_paper.py
  ```
 
-#### Options
+### Options
 
 `--picture_path` : path to the original picture
 `--mask_path`       : path to the mask, it has to be black and white, the black part indicates the missing pixels
@@ -34,7 +34,7 @@ And then run:
 `--tolerance`        : tolerance value for Lasso
 `--local`                : whether to build the dictionary locally
 
-#### Results
+### Results
 
 The results will be save at `./results`,including the inpainted image and a report for a single experiment will be save at `./results/results.txt`. An example is like below:
 
@@ -53,7 +53,7 @@ MSE: 0.002956 | PSNR: 25.293428 | SSIM: 0.957037 >>> Inpainted picture save at:
 
 ## Dictlearn based method
 
-#### Run
+### Run
 
 To run the `dictlearn` based  method, place your original image and corresponding mask in the path `./pictures` the same as above:
 
@@ -69,7 +69,7 @@ And then run:
   python run_package.py
 ```
 
-#### Results
+### Results
 
 The results will be save at `./results/package/`
 
