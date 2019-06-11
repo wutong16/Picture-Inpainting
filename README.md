@@ -1,6 +1,6 @@
 # Picture Inpainting
 
-1. Python implementation of the paper [IMAGE INPAINTING VIA SPARSE REPRESENTATION ](<<https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4959679>>), ICASSP 2009
+1. Python implementation of the paper [IMAGE INPAINTING VIA SPARSE REPRESENTATION](<https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4959679>), ICASSP 2009
 
 2. Picture inpainting using Python Package [Dictlearn](<https://dictlearn.readthedocs.io/en/latest/algorithms.html#inpaint>).
 
